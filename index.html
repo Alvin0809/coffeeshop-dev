@@ -1,0 +1,183 @@
+<!-- Developed by: Alvin Mun -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Depresso Espresso Cafe</title>
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5">
+          <div class="container">
+            <h1 class="display-4">Welcome to Depresso Espresso Cafe</h1>
+            <p class="lead">Your cozy corner for the finest coffee and delightful treats.</p>
+            <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu</a>
+          </div>
+        </section>
+      
+        <!-- About Us Section -->
+        <section class="py-5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h2 class="mb-4">About Us</h2>
+                <p>
+                  At Depresso Espresso, we believe every cup of coffee tells a story. 
+                  Nestled in the heart of the city, our coffee shop combines the rich aroma of freshly brewed coffee with a warm and inviting atmosphere.
+                </p>
+                <p>
+                  Whether you're here to unwind, work, or catch up with friends, we're here to make your experience memorable.
+                </p>
+                <a href="#contact" class="btn btn-outline-secondary">Learn More</a>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="img/coffee-shop.jpg" alt="Coffee Shop" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Menu Section -->
+        <section id="menu" class="bg-secondary text-light py-5">
+          <div class="container text-center">
+            <h2 class="mb-4">Our Menu</h2>
+            <p class="mb-5">From classic espresso to indulgent pastries, there's something for everyone.</p>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card bg-light text-dark mb-4">
+                  <img src="img/latte.jpg" class="card-img-top" alt="Latte">
+                  <div class="card-body">
+                    <h5 class="card-title">Signature Latte</h5>
+                    <p class="card-text">A perfect blend of espresso and creamy steamed milk.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-light text-dark mb-4">
+                  <img src="img/croissant.jpg" class="card-img-top" alt="Croissant">
+                  <div class="card-body">
+                    <h5 class="card-title">Butter Croissant</h5>
+                    <p class="card-text">Flaky, buttery, and freshly baked every morning.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card bg-light text-dark mb-4">
+                  <img src="img/coldbrew.jpg" class="card-img-top" alt="Cold Brew">
+                  <div class="card-body">
+                    <h5 class="card-title">Cold Brew</h5>
+                    <p class="card-text">Smooth, refreshing, and perfect for any time of the day.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Order Now Button -->
+    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div>
+</section>
+
+<!-- Order Form Modal -->
+<div class="modal fade" id="orderModal" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="orderForm">
+          <div class="mb-3">
+            <label for="customerName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="customerEmail" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="customerEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="orderDetails" class="form-label">Order Details</label>
+            <textarea class="form-control" id="orderDetails" rows="4" placeholder="Describe your order" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="pickupTime" class="form-label">Pickup Time</label>
+            <input type="time" class="form-control" id="pickupTime" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+      
+        <!-- Testimonials Section -->
+        <section class="py-5">
+          <div class="container text-center">
+            <h2 class="mb-4">What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <blockquote class="blockquote">
+                    <p>"The best coffee I've ever had! The ambiance is perfect for a relaxing day."</p>
+                    <footer class="blockquote-footer">Swee Yin</footer>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote class="blockquote">
+                    <p>"Friendly staff and amazing pastries. This is my new favorite spot!"</p>
+                    <footer class="blockquote-footer">Clara Mun</footer>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <blockquote class="blockquote">
+                    <p>"Their cold brew is a game-changer. Highly recommend to all coffee lovers."</p>
+                    <footer class="blockquote-footer">Mei</footer>
+                  </blockquote>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Contact Section -->
+        <section id="contact" class="bg-light py-5">
+          <div class="container text-center">
+            <h2 class="mb-4">Get in Touch</h2>
+            <p>We'd love to hear from you! Drop by or send us a message.</p>
+            <form class="row g-3 justify-content-center">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      
+    <!-- Bootstrap Javascript plugins -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

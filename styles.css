@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff3e6;
+    color: #3c2f2f;
+  }
+  
+  header, footer {
+    background-color: #6b4f4f;
+    color: white;
+    padding: 1rem;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #6b4f4f;
+  }
+  
+  a.btn-primary, button.btn-primary {
+    background-color: #6b4f4f;
+    border: none;
+  }
+  
+  a.btn-primary:hover, button.btn-primary:hover {
+    background-color: #502f2f;
+  }
+  
+  a.btn-light, button.btn-light {
+    background-color: #fff3e6;
+    color: #6b4f4f;
+  }
+  
+  a.btn-light:hover, button.btn-light:hover {
+    background-color: #e6dbcc;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fffaf0; 
+  }
+  
+  .modal-header {
+    background-color: #6b4f4f; 
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .modal-title {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-body label {
+    font-weight: bold;
+    color: #6b4f4f;
+  }
+  
+  .modal-body input,
+  .modal-body textarea {
+    border: 1px solid #d3cfcf;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .modal-body input:focus,
+  .modal-body textarea:focus {
+    border-color: #6b4f4f;
+    box-shadow: 0 0 5px rgba(107, 79, 79, 0.5);
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #d3cfcf;
+    padding-top: 15px;
+  }
+  
+  button.btn-primary {
+    background-color: #6b4f4f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #502f2f;
+  }
+  
+  button.btn-close {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  button.btn-close:hover {
+    color: #f0e4e4;
+  }
