@@ -30,7 +30,8 @@ Depresso Espresso Cafe is a beautifully designed website that showcases our coff
 3. Open `index.html` in your browser to view the website.
 
 ## Screenshots
-![Depresso Espresso Cafe](img/coffee-shop.jpg)
+![Depresso Espresso Cafe](![depresso espresso cafe](https://github.com/user-attachments/assets/c8fc5eef-0307-4091-95dc-eeaea40a209a)
+)
 
 ## Contributing
 Feel free to submit issues and pull requests to improve the website!
